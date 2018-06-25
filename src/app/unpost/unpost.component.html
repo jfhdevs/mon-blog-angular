@@ -1,0 +1,11 @@
+<div [ngStyle]="{'background-color':postcolor()}" >
+  <div style="column-count:2;" >
+    <h4 style="text-align:left">{{ postTitre }}</h4>
+    <h6 style="text-align:right">{{ postCrea | date: 'dd/MM/yyyy, HH:mm' }}</h6>
+  </div>
+  <div style="text-align:justify">{{ postContenu }}</div>
+  <div style="text-align:left">
+      <input type="button" (click)="inclovecpt ()" value="Love It" style="background-color: red; color: white">
+      <input type="button" (click)="declovecpt ()" value="Don't love It" style="background-color: green; color: white">
+    </div>
+</div>
